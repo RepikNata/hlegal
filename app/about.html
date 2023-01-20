@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="nav-padding page-about">
+
+    <header class="header">
+        <div class="header__top-line">
+            <div class="container header__container-top">
+                <ul class="header__top-item lang-switch d-flex">
+                    <li class="lang-switch__li"><a class="lang-switch__link" href="#">ук</a></li>
+                    <li class="lang-switch__li"><a class="lang-switch__link" href="#">ру</a></li>
+                    <li class="lang-switch__li"><a class="lang-switch__link active" href="#">en</a></li>
+                </ul>
+                <a href="#" class="header__adress header__top-item hide-mobile color-gray">Kyiv, Mechnikova str., 14/1</a>
+                <a class="header__phone header__top-item" href="tel:+88009001234">8 800 900 12 34</a>
+                <a class="header__fb header__top-item hide-mobile link-style-gray" href="#">
+                    <svg class="header__fb-icon" width="24" height="25" viewBox="0 0 24 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container header__container-main">
+            <div class="header__logo-box">
+                <a class="header__logo" href="#">
+                    <img class="header__logo-img logo-dark img-responsive" src="img/logo-dark.png" alt="Logo dark" width="130" height="60">
+                    <img class="header__logo-img logo-white img-responsive" src="img/logo-white.png" alt="Logo white" width="130" height="60">
+                </a>
+                <div class="header__breadcrumbs">about us</div>
+            </div>
+            <nav class="header__menu" id="menu-toggle">
+                <button type="button" class="header__menu-btn" onclick="showMenu()">
+                    <svg class="header__menu-btn-icon header__menu-btn-icon--hamburger" width="32" height="33" viewBox="0 0 32 33" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10.5H25"/>
+                        <path d="M7 16.5H25"/>
+                        <path d="M7 22.5H25"/>
+                    </svg>
+                    <svg class="header__menu-btn-icon header__menu-btn-icon--close" width="32" height="32" viewBox="0 0 32 32" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 7L25 25"/>
+                        <path d="M25 7L7 25"/>
+                    </svg>
+                </button>
+                <ul class="header__menu-list list-no-style">
+                    <li class="header__menu-list-li">
+                        <a class="header__menu-link active link-style fw-700" href="#">about us</a>
+                    </li>
+                    <li class="header__menu-list-li">
+                        <a class="header__menu-link link-style fw-700" href="#">services</a>
+                    </li>
+                    <li class="header__menu-list-li">
+                        <a class="header__menu-link link-style fw-700" href="#">team</a>
+                    </li>
+                    <li class="header__menu-list-li">
+                        <a class="header__menu-link link-style fw-700" href="#">publications</a>
+                    </li>
+                    <li class="header__menu-list-li">
+                        <a class="header__menu-link link-style fw-700" href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="page-content p-t-30px p-b-30px">
+        <div class="container container--page page-content__block-1">
+            <div class="page-content-head typography">
+                <h1 class="page-title text-gradient-main">We turn over the idea of legal services</h1>
+                <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law of the sea in Ukraine.</p>
+                <p>HLEGAL is a reliable business partner, confirmed by stable cooperation with international law firms, the trust of large Ukrainian and international companies, and the recognition of professional ratings.</p>
+            </div>
+            <div class="page-content__preferences preferences p-t-10px">
+                <div class="preferences__row d-flex d-flex-wrap">
+                    <div class="preferences__item">
+                        <div class="preferences__item-text-hold">
+                            <div class="preferences__item-title text-gradient-main fw-700">
+                                <span class="preferences__item-icon-hold">
+                                    <svg class="preferences__item-icon"  width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M27.1137 6.30516C26.9447 6.13716 26.7457 6.05266 26.5157 6.05266C26.4012 6.05266 26.1597 6.14666 25.7927 6.33216C25.4252 6.51816 25.0352 6.72516 24.6247 6.95616C24.2132 7.18566 23.7262 7.39366 23.1642 7.57966C22.6027 7.76516 22.0827 7.85916 21.6042 7.85916C21.1622 7.85916 20.7722 7.77516 20.4362 7.60666C19.3217 7.08466 18.3522 6.69516 17.5292 6.43816C16.7062 6.18166 15.8212 6.05266 14.8737 6.05266C13.2377 6.05266 11.3742 6.58466 9.28524 7.64666C8.85424 7.86166 8.54524 8.02816 8.34524 8.15016L8.14674 6.69466C8.59524 6.30516 8.88474 5.73766 8.88474 5.09716C8.88474 3.92366 7.93374 2.97266 6.76024 2.97266C5.58674 2.97266 4.63574 3.92366 4.63574 5.09716C4.63574 5.86266 5.04474 6.52816 5.65174 6.90216L8.52174 27.9472C8.60724 28.5737 9.14324 29.0282 9.75874 29.0282C9.81474 29.0282 9.87174 29.0247 9.92924 29.0172C10.6132 28.9232 11.0922 28.2937 10.9987 27.6097L9.84524 19.1512C11.9382 18.1127 13.7487 17.5892 15.2717 17.5892C15.9182 17.5892 16.5487 17.6857 17.1632 17.8807C17.7782 18.0762 18.2897 18.2882 18.6967 18.5177C19.1037 18.7477 19.5842 18.9607 20.1367 19.1547C20.6902 19.3497 21.2367 19.4472 21.7762 19.4472C23.1392 19.4472 24.7717 18.9337 26.6742 17.9072C26.9132 17.7832 27.0882 17.6612 27.1987 17.5417C27.3092 17.4222 27.3647 17.2522 27.3647 17.0312V6.90266C27.3647 6.67316 27.2812 6.47366 27.1137 6.30516Z" fill="#F0145A"/></svg>
+                                </span>
+                                10+
+                            </div>
+                            <p class="preferences__item-text">years of relevant experience</p>
+                        </div>
+                    </div>
+                    <div class="preferences__item">
+                        <div class="preferences__item-text-hold">
+                            <div class="preferences__item-title text-gradient-main fw-700">
+                                <span class="preferences__item-icon-hold">
+                                    <svg class="preferences__item-icon"  width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M27.1137 6.30516C26.9447 6.13716 26.7457 6.05266 26.5157 6.05266C26.4012 6.05266 26.1597 6.14666 25.7927 6.33216C25.4252 6.51816 25.0352 6.72516 24.6247 6.95616C24.2132 7.18566 23.7262 7.39366 23.1642 7.57966C22.6027 7.76516 22.0827 7.85916 21.6042 7.85916C21.1622 7.85916 20.7722 7.77516 20.4362 7.60666C19.3217 7.08466 18.3522 6.69516 17.5292 6.43816C16.7062 6.18166 15.8212 6.05266 14.8737 6.05266C13.2377 6.05266 11.3742 6.58466 9.28524 7.64666C8.85424 7.86166 8.54524 8.02816 8.34524 8.15016L8.14674 6.69466C8.59524 6.30516 8.88474 5.73766 8.88474 5.09716C8.88474 3.92366 7.93374 2.97266 6.76024 2.97266C5.58674 2.97266 4.63574 3.92366 4.63574 5.09716C4.63574 5.86266 5.04474 6.52816 5.65174 6.90216L8.52174 27.9472C8.60724 28.5737 9.14324 29.0282 9.75874 29.0282C9.81474 29.0282 9.87174 29.0247 9.92924 29.0172C10.6132 28.9232 11.0922 28.2937 10.9987 27.6097L9.84524 19.1512C11.9382 18.1127 13.7487 17.5892 15.2717 17.5892C15.9182 17.5892 16.5487 17.6857 17.1632 17.8807C17.7782 18.0762 18.2897 18.2882 18.6967 18.5177C19.1037 18.7477 19.5842 18.9607 20.1367 19.1547C20.6902 19.3497 21.2367 19.4472 21.7762 19.4472C23.1392 19.4472 24.7717 18.9337 26.6742 17.9072C26.9132 17.7832 27.0882 17.6612 27.1987 17.5417C27.3092 17.4222 27.3647 17.2522 27.3647 17.0312V6.90266C27.3647 6.67316 27.2812 6.47366 27.1137 6.30516Z" fill="#F0145A"/></svg>
+                                </span>
+                                30+
+                            </div>
+                            <p class="preferences__item-text">active clients who entrust us with their orders on a monthly basis</p>
+                        </div>
+                    </div>
+                    <div class="preferences__item">
+                        <div class="preferences__item-text-hold">
+                            <div class="preferences__item-title text-gradient-main fw-700">
+                                <span class="preferences__item-icon-hold">
+                                    <svg class="preferences__item-icon"  width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M27.1137 6.30516C26.9447 6.13716 26.7457 6.05266 26.5157 6.05266C26.4012 6.05266 26.1597 6.14666 25.7927 6.33216C25.4252 6.51816 25.0352 6.72516 24.6247 6.95616C24.2132 7.18566 23.7262 7.39366 23.1642 7.57966C22.6027 7.76516 22.0827 7.85916 21.6042 7.85916C21.1622 7.85916 20.7722 7.77516 20.4362 7.60666C19.3217 7.08466 18.3522 6.69516 17.5292 6.43816C16.7062 6.18166 15.8212 6.05266 14.8737 6.05266C13.2377 6.05266 11.3742 6.58466 9.28524 7.64666C8.85424 7.86166 8.54524 8.02816 8.34524 8.15016L8.14674 6.69466C8.59524 6.30516 8.88474 5.73766 8.88474 5.09716C8.88474 3.92366 7.93374 2.97266 6.76024 2.97266C5.58674 2.97266 4.63574 3.92366 4.63574 5.09716C4.63574 5.86266 5.04474 6.52816 5.65174 6.90216L8.52174 27.9472C8.60724 28.5737 9.14324 29.0282 9.75874 29.0282C9.81474 29.0282 9.87174 29.0247 9.92924 29.0172C10.6132 28.9232 11.0922 28.2937 10.9987 27.6097L9.84524 19.1512C11.9382 18.1127 13.7487 17.5892 15.2717 17.5892C15.9182 17.5892 16.5487 17.6857 17.1632 17.8807C17.7782 18.0762 18.2897 18.2882 18.6967 18.5177C19.1037 18.7477 19.5842 18.9607 20.1367 19.1547C20.6902 19.3497 21.2367 19.4472 21.7762 19.4472C23.1392 19.4472 24.7717 18.9337 26.6742 17.9072C26.9132 17.7832 27.0882 17.6612 27.1987 17.5417C27.3092 17.4222 27.3647 17.2522 27.3647 17.0312V6.90266C27.3647 6.67316 27.2812 6.47366 27.1137 6.30516Z" fill="#F0145A"/></svg>
+                                </span>
+                                500+
+                            </div>
+                            <p class="preferences__item-text">hours of pro bono work annually</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container--fullsize page-content__block-2">
+            <div class="typography">
+                <img src="img/team.jpg" alt="Team" class="typography-img-offset">    
+            </div>
+        </div>
+
+        <div class="container container--page  page-content__block-3">
+            <div class="typography">
+                <p>The historically unchanged legal profession has begun to reformat in recent years. Clients are feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.</p>
+                <p>Quality is what we care about the most.</p>
+                <p>It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we want our clients to trust us too.</p>
+            </div>
+            <h2 class="page-title text-gradient-main">Quality is what we care about the most.</h2>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="gallery footer-glue-down">
+        <div class="container">
+
+            <h2 class="gallery__title block-title text-center p-b-30px">achievements</h2>
+
+            <div class="js-gallery-col-4">
+                <div class="gallery__item-wrap">
+                    <div class="gallery__item d-flex-center block-center">
+                        <img src="img/gallery-logo-1.png" alt="Gallery logo 1" class="gallery__item-img">
+                    </div>
+                </div>
+                <div class="gallery__item-wrap">
+                    <div class="gallery__item d-flex-center block-center">
+                        <img src="img/gallery-logo-2.png" alt="Gallery logo 2" class="gallery__item-img">
+                    </div>
+                </div>
+                <div class="gallery__item-wrap">
+                    <div class="gallery__item d-flex-center block-center">
+                        <img src="img/gallery-logo-3.png" alt="Gallery logo 3" class="gallery__item-img">
+                    </div>
+                </div>
+                <div class="gallery__item-wrap">
+                    <div class="gallery__item d-flex-center block-center">
+                        <img src="img/gallery-logo-4.png" alt="Gallery logo 4" class="gallery__item-img">
+                    </div>
+                </div>
+                <div class="gallery__item-wrap">
+                    <div class="gallery__item d-flex-center block-center">
+                        <img src="img/gallery-logo-2.png" alt="Gallery logo 2" class="gallery__item-img">
+                    </div>
+                </div>
+                <div class="gallery__item-wrap">
+                    <div class="gallery__item d-flex-center block-center">
+                        <img src="img/gallery-logo-3.png" alt="Gallery logo 3" class="gallery__item-img">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__content">
+                <div class="footer__address">
+                    <div class="footer__address-text">Kyiv, Mechnikova str., 14/1</div>
+                    <a href="#" class="footer__address-link link-style fw-700">On map</a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__fb footer__contacts-item link-style">
+                        <svg class="footer__fb-icon" width="24" height="25" viewBox="0 0 24 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+30800211927" class="footer__phone footer__contacts-item link-style-main fw-700">0800 211 927</a>
+                    <a href="mailto:contact@forstudy.space" class="footer__email footer__contacts-item link-style fw-700">contact@forstudy.space</a>
+                </div>
+            </div>
+            <div class="footer__copyright">© 2021 HLEGAL Law company, LLC</div>
+        </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

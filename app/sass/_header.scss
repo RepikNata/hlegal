@@ -1,0 +1,325 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+
+	& &__container {
+
+		&-top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-main {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 20px;
+		}
+	}
+	& &__top-line {
+		background-color: $grayBg;
+		padding: 10px 0;
+		margin-bottom: 15px;
+	}
+	& &__adress {
+		
+	}
+	& &__phone {
+		color: $grayText;
+		font-weight: 700;
+		font-size: 16px;
+		+md {
+			font-size: 40px;
+		}
+	}
+	& &__fb {
+		
+		&-icon {
+		}
+	}
+	& &__logo {
+
+
+		.logo-dark {
+
+		}
+		.logo-white {
+			display: none;
+		}
+		&-img {
+			width: 70px;
+			
+		}
+		&-box {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+	& &__breadcrumbs {
+		color: $colorText;
+		font-size: 20px;
+		font-weight: 400;
+		position: relative;
+		top: -9px;
+		margin-left: 10px;
+
+		&::before {
+			content: '/';
+			color: $colorMain;
+			font-weight: 700;
+			font-size: 28px;
+			position: relative;
+			top: 4px;
+			left: -4px;
+		}
+	}
+	& &__menu {
+
+		&.show {
+
+			.header__menu-list {
+				display: block;
+			}
+
+			.header__menu-btn {
+				&-icon {
+					&--hamburger {
+						display: none;
+					}
+					&--close {
+						display: block;
+					}
+				}
+			}
+		}
+		
+		&-btn {
+			background-color: transparent;
+			border: none;
+			outline: none;
+			position: relative;
+			top: -3px;
+			color: $colorMain;
+			&:hover {
+				color: $colorMain;
+			}
+
+			&-icon {
+
+				&--hamburger {
+
+				}
+				&--close {
+					display: none;
+				}
+			}
+		}
+		&-list {
+			display: none;
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 100%;
+			padding: 15px;
+			z-index: 2;
+			background-color: #fff;
+			
+			&-li {
+				margin-bottom: 15px;
+				
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&-link {
+			font-size: 24px;
+			background-color: $grayBg;
+			border-radius: 12px;
+			display: block;
+			text-align: center;
+			padding: 8px 0;
+
+			&.active {
+				color: $colorMain;
+			}
+		}
+	}
+
+	&--white {
+		color: #fff;
+
+		.lang-switch {
+			&__link {
+				color: #fff;
+				&:hover {
+					color: $grayText;
+				}
+				&.active {
+					color: #fff;
+				}
+			}
+		}
+
+		.header {
+
+			&__logo {
+
+				.logo-dark {
+					display: none;
+				}
+				.logo-white {
+					display: block;
+				}
+			}
+
+			&__phone,
+			&__breadcrumbs,
+			&__menu-btn {
+				color: #fff;
+			}
+
+			&__top-line {
+				background-color: rgba($grayBg, .2);
+			}
+			&__container {
+				&-top {
+
+				}
+				&-main {
+
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.header {
+		& &__logo-img {
+			width: 130px;
+		}
+		& &__breadcrumbs {
+			font-size: 36px;
+			top: -2px;
+			margin-left: 30px;
+
+			&::before {
+				position: absolute;
+				font-size: 48px;
+				top: -5px;
+				left: -22px;
+				font-weight: 600;
+			}
+		}
+		& &__container-main {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		& &__menu {
+			width: 100%;
+			margin-top: 25px;
+
+			&-btn {
+				display: none;
+			}
+			&-list {
+				display: flex;
+				position: relative;
+				top: 0;
+				padding: 0;
+				margin: 0 -8px;
+				background-color: transparent;
+
+				&-li {
+					margin-bottom: 0;
+					padding: 0 8px;
+				}
+			}
+			&-link {
+				background-color: transparent;
+				font-size: 16px;
+				border-radius: 0;
+				padding: 3px 0;
+
+				&.active {
+					border-bottom: 2px solid;
+				}
+			}
+		}
+		& &__top-line {
+			background-color: transparent;
+		}
+
+		& &__container-top {
+			justify-content: flex-start;
+			padding-top: 38px;
+		}
+		.lang-switch {
+			margin-left: -9px;
+		}
+		& &__top-item {
+			top: -2px;
+			margin-right: 20px;
+		}
+
+		&--white {
+
+			.header {
+				&__adress {
+					color: #fff;
+				}
+				&__menu {
+					&-link {
+						color: #fff;
+
+						&:hover {
+							border-bottom: 2px solid;
+						}
+					}
+				}
+				&__fb {
+					color: #fff;
+					&:hover {
+						color: $colorMain;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+	.header {
+		padding: 30px 0;
+		overflow: hidden;
+		
+		& &__container-main,
+		& &__container-top {
+			max-width: 100%;
+		}
+
+		& &__container-main {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		& &__top-line {
+			position: absolute;
+			top: 0;
+			right: -20px;
+		}
+		& &__menu {
+			width: auto;
+			margin-top: 38px;
+
+			&-link {
+				white-space: nowrap;
+			}
+		}
+	}
+}

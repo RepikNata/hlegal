@@ -1,0 +1,61 @@
+.page-about {
+
+	.page-content {
+
+		& &__block-1 {
+
+		}
+	}
+
+	.preferences {
+		margin-bottom: 30px;
+
+		&__row {
+			border-left: 4px solid $graySeparator;
+			padding-left: 30px;
+		}
+		&__item {
+			margin-bottom: 40px;
+			width: 100%;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__item-icon {
+			&-hold {
+			}
+		}
+		&__item-text-hold {
+		}
+		&__item-title {
+			font-size: 36px;
+		}
+		&__item-text {
+			color: $colorText;
+		}
+
+	}
+}
+
+@media (min-width: 1024px) {
+	.page-about {
+
+		.page-content {
+
+			&__block-1 {
+				display: flex;
+				padding-bottom: 20px;
+
+				.page-content {
+					&-head {
+						width: 60%;
+						padding-right: 40px;
+					}
+					&__preferences {
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
+}

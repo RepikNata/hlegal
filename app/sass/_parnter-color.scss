@@ -1,0 +1,39 @@
+.parnter-color {
+	& &__title {
+		font-size: 14px;
+	}
+	& &__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: canter;
+		margin: 0 0;
+	}
+	& &__item {
+		--bg: #eee;
+		--max-height: 120px;
+		background-color: var(--bg);
+		width: 100%;
+		height: var(--max-height);
+		padding: 25px;
+	}
+	& &__img {
+		max-height: var(--max-height);
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.parnter-color {
+		& &__item {
+			width: 33%;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.parnter-color {
+		& &__item {
+			width: 25%;
+		}
+	}
+}
